@@ -7,30 +7,39 @@
 
 <body>
   <div class="container">
-      <h1>
-          <%=title%>
-        </h1>
-      <ul class="nav">
-          <% for (let i = 0; i < nav.length; i++) {%>
-          <li class="nav-item">
-            <a class="nav-link" href="<%=nav[i].link%>"><%=nav[i].title%></a>
-          </li>
-          <% } %>
-        </ul>
+    <h1>
+      <%=title%>
+    </h1>
+    <ul class="nav">
+      <% for (let i = 0; i < nav.length; i++) {%>
+      <li class="nav-item">
+        <a class="nav-link" href="<%=nav[i].link%>">
+          <%=nav[i].title%></a>
+      </li>
+      <% } %>
+    </ul>
 
-        <div class="card-columns">
-          <% for (let i = 0; i < triassicDinosaurs.length; i++) {%>
-
-            <div class="card" style="width: 18rem;">
-                <img src="<%=triassicDinosaurs[i].picture%>" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"><%=triassicDinosaurs[i].name%></h5>
-                  <p class="card-text"><%=triassicDinosaurs[i].mya%> Mya</p>
-                  <a href="/triassic/<%=triassicDinosaurs[i].id%>" class="btn btn-primary">Read more</a>
-                </div>
-              </div>
-          <% } %>
+    <div class="row">
+      <div class="col-md-12">
+        <h2>
+          <%=dino.name%>
+        </h2>
       </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <p>
+          <b><%=dino.type%></b>. <%=dino.description%>
+        </p>
+      </div>
+    </div>
+    <div>
+      <img src="<%=dino.picture%>" class="card-img-top" alt="...">
+    </div>
+  </div>
+  </div>
+
+
 
   </div>
 

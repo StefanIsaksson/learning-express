@@ -19,14 +19,14 @@
         </ul>
 
         <div class="card-columns">
-          <% for (let i = 0; i < triassicDinosaurs.length; i++) {%>
+          <% for (let i = 0; i < dinos.length; i++) {%>
 
             <div class="card" style="width: 18rem;">
-                <img src="<%=triassicDinosaurs[i].picture%>" class="card-img-top" alt="...">
+                <img src="<%=dinos[i].picture%>" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title"><%=triassicDinosaurs[i].name%></h5>
-                  <p class="card-text"><%=triassicDinosaurs[i].mya%> Mya</p>
-                  <a href="/triassic/<%=triassicDinosaurs[i].id%>" class="btn btn-primary">Read more</a>
+                  <h5 class="card-title"><%=dinos[i].name%></h5>
+                  <p class="card-text"><%=dinos[i].mya%> Mya</p>
+                  <a href="/triassic/<%=dinos[i].id%>" class="btn btn-primary">Read more</a>
                 </div>
               </div>
           <% } %>

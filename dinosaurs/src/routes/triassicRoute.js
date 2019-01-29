@@ -2,7 +2,7 @@ const express = require('express');
 
 const triassicRouter = express.Router();
 
-var triassicDinosaurs = [
+var dinos = [
   {
       "id": 1,
       "name": "Saturnalia",
@@ -44,7 +44,7 @@ var triassicDinosaurs = [
 triassicRouter.route('/')
     .get((req, res) => {
         res.render(
-            'triassic',
+            'dinoListView',
             {
                 nav: [
                     { link: "/", title: 'Home' },
@@ -52,7 +52,7 @@ triassicRouter.route('/')
                     { link: "/jurassic", title: 'Jurassic' },
                     { link: "/cretaceous", title: 'Cretaceous' }],
                 title: "Triassic",
-                triassicDinosaurs
+                dinos
             }
         );
     });
@@ -60,12 +60,9 @@ triassicRouter.route('/')
 triassicRouter.route('/:id')
     .get((req, res) => {
         const { id } = req.params;
-        console.log(id);
-        console.log(triassicDinosaurs);
-        const dino = triassicDinosaurs.find(x => parseInt(x.id) === parseInt(id));
-        console.log(dino);
+        const dino = dinos.find(x => parseInt(x.id) === parseInt(id));
         res.render(
-          'dinosaur',
+          'dinoView',
           {
               nav: [
                   { link: "/", title: 'Home' },

@@ -1,42 +1,122 @@
 [
-  {
-      "id": 1,
-      "name": "Saturnalia",
-      "type": "Sauropodomorph",
-      "length": "1.5m",
-      "mya": "233",
-      "period" : "triassic",
-      "description": "Herbivorous and of the earliest of all dinosaurs.",
-      "picture" : "https://upload.wikimedia.org/wikipedia/commons/0/01/Saturnalia_NT_small.jpg"
-  },
-  {
-      "id": 2,
-      "name": "Staurikosaurus",
-      "type": "Saurischian",
-      "length": "2.25m",
-      "mya": "233",
-      "period" : "triassic",
-      "description": "Small meat eater. One of the earliest dinosaurs.",
-      "picture" : "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Human-staurikosaurus_size_comparison.svg/320px-Human-staurikosaurus_size_comparison.svg.png"
-  },
-  {
-      "id": 3,
-      "name": "Thecodontosaurus",
-      "type": "Sauropodomorph (an early sauropod)",
-      "length": "2m",
-      "mya": "203-201",
-      "period" : "triassic",
-      "description": "Relatively small Triassic dinosaur.",
-      "picture" : "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Thecodontosaurus_Scale.svg/320px-Thecodontosaurus_Scale.svg.png"
-  },
-  {
-      "id": 4,
-      "name": "Riojasaurus",
-      "type": "Sauropodomorph (an early sauropod)",
-      "length": "10m",
-      "mya": "221-210",
-      "period" : "triassic",
-      "description": "Large sauropodomorph.",
-      "picture" : "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Riojasaurus_Scale.svg/800px-Riojasaurus_Scale.svg.png"
-  }
+    {
+        "id": 1,
+        "name": "Saturnalia",
+        "type": "Sauropodomorph",
+        "diet": "Herbivore",
+        "length": "1.5m",
+        "weight": "10 Kg",
+        "mya": "233",
+        "period": "triassic",
+        "description": "Herbivorous and of the earliest of all dinosaurs.",
+        "picture": "https://upload.wikimedia.org/wikipedia/commons/0/01/Saturnalia_NT_small.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Staurikosaurus",
+        "type": "Saurischian",
+        "diet": "Carnivore",
+        "length": "2.25m",
+        "weight": "30 Kg",
+        "mya": "233",
+        "period": "triassic",
+        "description": "Small meat eater. One of the earliest dinosaurs.",
+        "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Human-staurikosaurus_size_comparison.svg/320px-Human-staurikosaurus_size_comparison.svg.png"
+    },
+    {
+        "id": 3,
+        "name": "Thecodontosaurus",
+        "type": "Sauropodomorph (an early sauropod)",
+        "diet": "Herbivore",
+        "length": "2m",
+        "weight": "16 Kg",
+        "mya": "203-201",
+        "period": "triassic",
+        "description": "Relatively small Triassic dinosaur.",
+        "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Thecodontosaurus_Scale.svg/320px-Thecodontosaurus_Scale.svg.png"
+    },
+    {
+        "id": 4,
+        "name": "Riojasaurus",
+        "type": "Sauropodomorph (an early sauropod)",
+        "diet": "Herbivore",
+        "length": "10m",
+        "weight": "1200 Kg",
+        "mya": "221-210",
+        "period": "triassic",
+        "description": "Large sauropodomorph.",
+        "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Riojasaurus_Scale.svg/800px-Riojasaurus_Scale.svg.png"
+    },
+    {
+        "id": 5,
+        "name": "Plateosaurus",
+        "type": "Sauropodomorph",
+        "diet": "Herbivore",
+        "length": "5-10m",
+        "weight": "2000 Kg",
+        "mya": "214–204",
+        "period": "triassic",
+        "description": "Plateosaurus was a bipedal plant-eater and ikely to have been a herd animal.",
+        "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Human-plateosaurus_size_comparison.svg/1024px-Human-plateosaurus_size_comparison.svg.png"
+    },
+    {
+        "id": 6,
+        "name": "Pisanosaurus",
+        "type": "Ornithischian",
+        "diet": "Herbivore",
+        "length": "1m",
+        "weight": "8 Kg",
+        "mya": "228–216.5",
+        "period": "triassic",
+        "description": "Pisanosaurus is either the first known ornithischian or not a dinosaur at all.",
+        "picture": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Pisanosaurus.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Mussaurus",
+        "type": "Sauropodomorph (early sauropod)",
+        "diet": "Herbivore",
+        "length": "3m",
+        "weight": "100 Kg",
+        "mya": "215–203",
+        "period": "triassic",
+        "description": "Name means 'mouse lizard'.",
+        "picture": "http://www.dinochecker.com/img/mussaurus-size.png"
+    },
+    {
+        "id": 8,
+        "name": "Melanorosaurus",
+        "type": "Sauropodomorph (early sauropod)",
+        "diet": "Herbivore",
+        "length": "8 m",
+        "weight": "1500 Kg",
+        "mya": "227-221",
+        "period": "triassic",
+        "description": "One of the largest dinosaurs of the time.",
+        "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Melanorosaurus_Scale.svg/320px-Melanorosaurus_Scale.svg.png"
+    },
+    {
+        "id": 9,
+        "name": "Herrerasaurus",
+        "type": "Early theropod",
+        "diet": "Carnivore",
+        "length": "3-4.5m",
+        "weight": "200 kg",
+        "mya": "228",
+        "period": "triassic",
+        "description": "A mid-sized, fast-moving predatory dinosaur",
+        "picture": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Herrerasaurus_scale.png"
+    },
+    {
+        "id": "",
+        "name": "",
+        "type": "",
+        "diet": "",
+        "length": "",
+        "weight": "",
+        "mya": "",
+        "period": "",
+        "description": ".",
+        "picture": ""
+    }
 ]

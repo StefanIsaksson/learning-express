@@ -15,12 +15,9 @@ function router(nav) {
         let client;
         try {
           client = await MongoClient.connect(url);
-          console.log('Connected correctly to server');
           const db = client.db(dbName);
           const col = await db.collection('dinos');
           const dinos = await col.find({ period: period }).toArray();
-          console.log('dinos' + dinos);
-
           res.render(
             'dinoListView',
             {
@@ -44,13 +41,9 @@ function router(nav) {
         let client;
         try {
           client = await MongoClient.connect(url);
-          console.log('Connected correctly to server');
           const db = client.db(dbName);
           const col = await db.collection('dinos');
-          console.log('id ' + id);
           const dino = await col.findOne({ 'id': Number(id) });
-          console.log('dinos' + dino);
-
           res.render(
             'dinoView',
             {
@@ -64,16 +57,6 @@ function router(nav) {
         }
         client.close();
       }());
-/*      const dino = dinos.find(x => parseInt(x.id) === parseInt(id));
-      res.render(
-        'dinoView',
-        {
-          nav,
-          title: "Triassic",
-          dino: dino
-        }
-      );
-*/
     });
     
   return dinoRouter;

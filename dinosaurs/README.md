@@ -23,6 +23,7 @@ Web application lists dinoaurs grouped by geologic period.
 |-------------------------|---------------------------------------------------------|
 |show dbs                 |list databases                                           |
 |use dino                 |switch to database dino (create new db is missing)       |
+|show collections         |list all collections under current db                    |
 |db.dinos.find().pretty() |list all dinosaurs found the collection dinos (db dino)  |
-|db.dropDatabase()        |                                                         |
+|db.dropDatabase()        |drop current db                                          |
 

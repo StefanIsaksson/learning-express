@@ -1,12 +1,8 @@
 const express = require('express');
-const MongoClient = require('mongodb').MongoClient;
 
 const dinoRouter = express.Router();
 
-function router(nav) {
-
-  const url = 'mongodb://localhost:27017';
-  const dbName = 'dino';
+function router(nav,db) {
 
   dinoRouter.route('/')
     .get((req, res) => {
@@ -14,8 +10,6 @@ function router(nav) {
       (async function mongo() {
         let client;
         try {
-          client = await MongoClient.connect(url);
-          const db = client.db(dbName);
           const col = await db.collection('dinos');
           const dinos = await col.find({ period: period }).toArray();
           res.render(
@@ -29,7 +23,6 @@ function router(nav) {
         } catch (err) {
           console.log(err.stack);
         }
-        client.close();
       }());
     });
 
@@ -40,8 +33,6 @@ function router(nav) {
       (async function mongo() {
         let client;
         try {
-          client = await MongoClient.connect(url);
-          const db = client.db(dbName);
           const col = await db.collection('dinos');
           const dino = await col.findOne({ 'id': Number(id) });
           res.render(
@@ -55,7 +46,6 @@ function router(nav) {
         } catch (err) {
           console.log(err.stack);
         }
-        client.close();
       }());
     });
     

@@ -1,0 +1,47 @@
+[
+	{
+		"name": "Amedeo Avogadro",
+		"born": 1776,
+		"died": 1856,
+		"occupation": "chemist",
+		"nationality": "Italian",
+		"description": "Realized elements could exist in the form of molecules rather than as individual atoms",
+		"qoute": "My studies of the natural sciences have particularly involved that part of physics which looks at the atomic world: the properties of molecules, the forces involved in their movement, the heat capacity of different substances, expansion of gases by heat, and the density and pressure of gases."
+	},
+	{
+		"name": "Jacob Berzelius",
+		"born": 1779,
+		"died": 1848,
+		"occupation": "chemist",
+		"nationality": "Swedish",
+		"description": "Measured accurate atomic weights for the chemical elements for the first time.",
+		"qoute": "…an active scholar should never count on being or becoming a person who either gives or finds pleasure in social entertainment."
+	},
+	{
+		"name": "Niels Bohr",
+		"born": 1885,
+		"died": 1962,
+		"occupation": "physicist",
+		"nationality": "Danish",
+		"description": "Remodeled the atom so electrons occupied ‘allowed’ orbits around the nucleus while all other orbits were forbidden.",
+		"qoute": "An expert is a person who has made all the mistakes that can be made in a very narrow field."
+	},
+	{
+		"name": "Robert Boyle",
+		"born": 1627,
+		"died": 1691,
+		"occupation": "chemist",
+		"nationality": "Brittish",
+		"description": "Robert Boyle put chemistry on a firm scientific footing. Defined elements, compounds, and mixtures; and he discovered the first gas law.",
+		"qoute": "It is my intent to beget a good understanding between the chymists and the mechanical philosophers who have hitherto been too little acquainted with one anothers learning."
+	},
+	{
+		"name": "Lawrence Bragg",
+		"born": 1890,
+		"died": 1971,
+		"occupation": "physicist",
+		"nationality": "Brittish",
+		"description": "Discovered how to locate the positions of atoms in solids using X-ray diffraction.",
+		"qoute": "The important thing in science is not so much to obtain new facts as to discover new ways of thinking about them."
+	}
+]
